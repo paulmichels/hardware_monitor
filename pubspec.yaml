@@ -1,0 +1,83 @@
+name: hardware_monitor
+description: Flutter project core.
+publish_to: 'none'
+version: 0.1.0+1
+environment:
+  sdk: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #UI
+  flutter_svg: ^2.0.12
+
+  #BloC
+  flutter_bloc: ^8.1.6
+
+  #Code generation
+  freezed_annotation: ^2.4.4
+
+  #Network
+  retrofit: ^4.4.1
+  dio: ^5.7.0
+  json_annotation: ^4.9.0
+
+  #Localisation
+  easy_localization: ^3.0.7
+
+  #Build config provider
+  package_info_plus: ^8.1.0
+
+  #Debug
+  logger: ^2.4.0
+
+  #Env config
+  flutter_dotenv: ^5.2.1
+  go_router: ^14.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  #Code generation
+  build_runner: ^2.4.13
+  retrofit_generator: ^9.1.4
+  json_serializable: ^6.8.0
+  freezed: ^2.5.7
+
+  #Code lint analysis
+  dart_code_metrics_presets: ^2.17.0
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/images/
+    - assets/fonts/
+    - assets/translations/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Black.ttf
+        - asset: assets/fonts/Poppins-BlackItalic.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins-BoldItalic.ttf
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+        - asset: assets/fonts/Poppins-ExtraBoldItalic.ttf
+        - asset: assets/fonts/Poppins-ExtraLight.ttf
+        - asset: assets/fonts/Poppins-ExtraLightItalic.ttf
+        - asset: assets/fonts/Poppins-Italic.ttf
+        - asset: assets/fonts/Poppins-Light.ttf
+        - asset: assets/fonts/Poppins-LightItalic.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+        - asset: assets/fonts/Poppins-SemiBoldItalic.ttf
+        - asset: assets/fonts/Poppins-Thin.ttf
+        - asset: assets/fonts/Poppins-ThinItalic.ttf
